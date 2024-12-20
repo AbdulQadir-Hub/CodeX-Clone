@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Codex</title>
+    <style>
+        .logo{
+            margin-left: 127px;
+            margin-top: -16px;
+        }
+        .container1{
+            display: flex;
+            margin-bottom: -21px;
+        }
+        .mail{
+            margin-top: 45px;
+            margin-left: 485px;
+        }
+        .phone{
+            margin-top: 45px;
+            margin-left: 40px;
+        }
+        .fa-envelope{
+            color: #7ADF4E;
+        }
+        .fa-phone{
+            color:#7ADF4E ;
+        }
+        .email{
+            color: #0156a7;
+            font-size: 17px;
+        }
+        .contact{
+            color:#0156a7 ;
+            font-size: 17px;
+        }
+        .navbar{
+            width: 100%;
+            background: linear-gradient(#78e845, #529a32);
+            box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.5);
+            line-height: 38px;
+            width: 100%;
+        }
+        .active{
+            margin-left: 120px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .navi{
+            margin-left: 25px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .nav-link{
+           
+            color: #ffffff;
+        }
+        .container6{
+          padding-top:40px ;
+          padding-bottom:70px ;
+          display:flex ;
+          justify-content: space-evenly;
+          background-color: #f3f3f3;
+          border-bottom: 50px solid #4e4c4c;
+        }
+        .container6 .container6-1 h4{
+          color:#ec1b30;
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        .container6 .container6-2 h4{
+          color: #ec1b30;
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        .container6 .container6-3 h4{
+          color: #ec1b30;
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        .container6 .container6-1 a{
+          color: #0156a7;
+          padding-top: 30px;
+        }
+        .container6 .container6-2 a{
+          color: #0156a7;
+        }
+        .container6 .container6-4 h4{
+          color: #ec1b30;
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        .container6 .container6-3 .fa-facebook-official{
+          color:#0156a7 ;
+          margin-left: 10px;
+        }
+        .container6 .container6-3 .fa-youtube-play{
+          color: red;
+          margin-left: 20px;
+        }
+        .container6 .container6-3 .fa-linkedin-square{
+          margin-left: 20px;
+          color:#0156a7 ;
+        }
+        .container-big{
+            
+            margin-top: 50px;
+            margin-left: 250px;
+            margin-right: 100px;
+        }
+        .container-big .container2 h2{
+            text-align: center;
+            font-variant: small-caps;
+            color: #0156a7;
+            font-size: 30px;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+        .container-big .container3 strong{
+            font-variant: small-caps;
+            color: #0156a7;
+            font-weight: 500;
+            line-height: 28px;
+            font-size: 16px;
+        }
+        .container-big .container3 {
+            display: flex;
+        }
+        .container4{
+            display: flex;
+        }
+        p{
+            font-size: 15px;
+            line-height: 27px;
+            word-spacing: 2px;
+        }
+        .container7{
+            display: flex;
+            margin-top: 60px;
+            padding-top: 40px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color:#f5f5f5;
+        }
+        .container7 .container7-1 .container7-1-1 strong{
+            color: #0156a7;
+            
+        }
+        .container7-1{
+            margin-left: 30px;
+        }
+        .container7-1-1{
+            text-align: center;
+        }
+        .container7-2{
+            text-align: center;
+            margin-left: 50px;
+        }
+        .container7-2 strong{
+            color: #0156a7;
+            font-weight: 500;
+            line-height: 25px;
+            font-size: 16px;
+        }
+        .container8{
+            display: flex;
+            margin-top:10px;
+            padding-top: 40px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .container8 .container8-1 .container8-1-1 strong{
+            color: #0156a7;
+            
+        }
+        .container8-1{
+            margin-left: 30px;
+            
+
+        }
+        .container8-1-1{
+            text-align: center;
+        }
+        .container8-2{
+            text-align: center;
+            margin-left: 30px;
+        }
+        .container8-2 strong{
+            color: #0156a7;
+            font-weight: 500;
+            line-height: 20px;
+            font-size: 16px;
+        }
+        .container9{
+            background-color:#f5f5f5;
+            padding-top: 50px;
+        }
+        .container9 .container9-1 {
+            color: #0156a7;
+            text-align: center;
+        }
+        .container9 .container9-1 strong{
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .container10{
+            display: flex;
+            background-color:#f5f5f5;
+        }
+        .container10 .container10-1 strong{
+            color: #0156a7;
+        }
+        .container10 .container10-2{
+            margin-top: 40px;
+        }
+        .container11{
+            background-color:#f5f5f5;
+        }
+        .container12{
+            color: #0156a7;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .container12 strong{
+            font-weight:500;
+            font-size: 22px;
+        }
+        .container13 strong{
+            color: #0156a7;
+        }
+        .container13-1{
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .container13-3{
+            display: flex;
+        }
+        .container14{
+            background-color:#f5f5f5 ;
+        }
+        .container14-1{
+            color: #0156a7;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 50px;
+        }
+        .container14-1 strong{
+            font-weight:500;
+            font-size: 22px;
+        }
+        .container14-2{
+            text-align: center;
+            color: #0156a7;
+        }
+        .container14-3 ul li span{
+            color: #99cc00;
+        }
+        ul{
+            margin-left: 50px;
+        }
+        .container14-4{
+            text-align: center;
+            color: #0156a7;
+        }
+        .container14-5 ul li span{
+            color: #99cc00;
+        }
+        .container14-6{
+            text-align: center;
+            color: #0156a7;
+        }
+        .container14-7 ul li span{
+            color: #99cc00;
+        }
+        .container14-8{
+            display: flex;
+            padding-bottom: 50px;
+        }
+        .container14-8 .vdo1{
+            margin-left: 55px;
+        }
+        .container14-8 .vdo2{
+            margin-left: 55px;
+
+        }
+    
+        .container15-1{
+            text-align: center;
+            color: #0156a7;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .container15-2{
+            display: flex;
+        }
+        .container15-2-2{
+            margin-left: 150px;
+
+        }
+        .container16{
+            background-color: #f5f5f5;
+            display: flex;
+            margin-bottom: 40px;
+            padding-bottom: 50px;
+        }
+        .container16 .container16-1 .container16-1-1{
+            text-align: center;
+            color: #0156a7;
+            
+            line-height: 20px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .container16 .container16-2 .container16-2-1{
+            text-align: center;
+            color: #0156a7;
+            
+            line-height: 20px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .container16-1{
+            margin-left: 30px;
+        }
+        .container16 i{
+            color: #0156a7;
+        }
+        .container16 .container16-1 .container16-1-2{
+            font-size: 15px;
+            font-weight: 350;
+        }
+        .container16 .container16-2 .container16-2-2{
+            font-size: 15px;
+            font-weight: 350;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <img class="logo" width="150px" src="data:image/jpeg;base64,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 " alt="">
+            <div class="mail">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a class="email" href="">support@codex.in</a>
+            </div>
+            <div class="phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            <span class="contact">0731-4088816, 93019-70501</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="active nav-link" aria-current="page" href="codex.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navi nav-link" href="clients.html">Clients</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="navi nav-link" href="service.html">Services</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="navi nav-link" href="solutions.html">Solutions</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="navi nav-link" href="survey-solution.html">Survey Solution</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="navi nav-link" href="about_us.html">About Us</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="navi nav-link" href="contact_us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container-big">
+            <div class="container2">
+                <h2>Survey Solution</h2>
+            </div>
+            <div class="container3">
+                <img width="120px" src="https://www.code-x.in/images/Original%20Product01.png" alt="">
+                <strong>India's 1st rapidly growing survey report generation software that gives you peace of <br> mind. currently working in 21 states and more than 120 cities across India. India's most <br> advanced motor report generation software, that provide you best formatted reports, <br> helps you to maintain TAT (Turn Around Time), schedule your report submission and <br> handle all your day to day back-office activities.</strong><br>
+            </div><br>
+            <div class="container4">
+                <div class="container4-1">
+                    <p>This is very surveyor friendly software, Despite of any other available survey <br> software(s),this unique software is very user friendly and easy to operate. As <br> tested in real world working scenario, Survey Solution Software improves day <br> to day working efficiency and increase productivity, this software also have <br> built-in album creation software that helps to create photo-sheets within <br> seconds, Auto Backup facility and this software comes with vast varieties of <br> reports.</p>
+                </div>
+                <div class="container4-2">
+                    <img src="https://www.code-x.in/images/Survey%20Solution%20Cover.png" alt="">
+                </div>
+            </div>
+            <div class="container5">
+                <p>Have you ever worried about day to day report generation? Are you still <br> struggling with clumsy document files, tables, borders, header footer and complex formatting of your reports which leads <br> to increase time for making survey reports and creating mental stress? Do you need to work and learn so many software <br> just to create one single report? Is your computer already flooding with Album, Photos, Word, Excel and Pdf files that are <br> unmanageable?</p>
+            </div>
+            <div class="container7">
+                <div class="container7-1">
+                    <div class="container7-1-1">
+                        <strong>PDF, IMAGE READING CAPABILITIES</strong><br><br>
+                        <img src="https://www.code-x.in/images/PicToText.png" alt="">
+                    </div>
+                     <br>
+                    <p>Survey Solution Software have unique feature for <br>adding parts and labour directly from PDF and <br>Image files and scanner integration, so you dont <br>have to type it manually, also Code-X Technologies is <br> proving its ground on every level of development <br> and quick after sales support with clients across all <br> over India.</p>
+                </div>
+                <div class="container7-2">
+                    <iframe width="350" height="315" src="https://www.youtube.com/embed/oTK02KgXD48?si=xUrWy4CkObuWvhvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+                    <strong>parts and labor directly from PDF and Image files, so <br> you don't have to type it manually.</strong>
+                </div>
+            </div>
+            <div class="container8">
+                <div class="container8-1">
+                    <div class="container8-1-1">
+                        <strong>BUILT IN ALBUM CRATION</strong><br><br>
+                        <img src="https://www.code-x.in/images/PicToText.png" alt="">
+                    </div>
+                     <br>
+                    <p>Survey Solution software has it’s own album creation <br> software, that is fast and robust enough to handle <br> complex image editing task, No need for any other 3rd <br> party software for image editing and album creation. <br> Survey Solution will do it for you! Just within seconds!</p> <br>
+                </div>
+                <div class="container8-2">
+                    <strong>Code-X Technologies offers you complete solution for <br> all of your day to day report generation.</strong><br>
+                    <iframe width="350" height="315" src="https://www.youtube.com/embed/oTK02KgXD48?si=xUrWy4CkObuWvhvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+                </div>
+            </div>
+            <div class="container9">
+                <div class="container9-1">
+                    <i class="fa fa-2x fa-sitemap" aria-hidden="true"></i>
+                    <strong>Server Based Technologies</strong><br>
+                </div><br>
+            </div>
+            <div class="container10">
+                <div class="container10-1">
+                    <p>Survey Solution is one and only advanced Networking based <br> Software that uses newest and fastest server <br> technology available in the market. <br>
+                        Our advanced networking features enables user to incorporate <br> multiple network and work seamlessly on <strong> desktop and laptop with <br> LAN or WiFi connection </strong> . You can connect any Laptop and desktop <br> as you desire in your network with Survey Solution. Its Server based <br> technology enables you to work conveniently over Wifi and LAN. You <br> can view/edit reports on your laptop with WiFi connection while your <br> operators are working over LAN connection, it helps software <br> portability and data reliability. <br>
+                </div>
+                <div class="container10-2">
+                    <img src="https://www.code-x.in/images/network.png" alt="">
+                </div>
+            </div>
+            <div class="container11">
+                <p>Survey Solution is built around the Surveyor needs who are having two offices. Our Server based technology <br> enables you to store your database online and work over online database anywhere, your reports will be available <br> online on your finger tips.</p>
+            </div>
+            <div class="container12">
+                <i class="fa fa-2x fa-users" aria-hidden="true"></i>
+                <strong>One Software All Solution</strong>
+            </div>
+            <div class="container13">
+                <div class="container13-1">
+                    <strong>MOST ADVANCED SURVEY REPORT GENERATION SOFTWARE IN CURRENT ERA.</strong>
+                </div>
+                <div class="container13-2">
+                    <p>Survey Solution is all in one package for all reporting and album (photo sheet) printing. With survey solution, you don't need</p>
+                </div>
+                <div class="container13-3">
+                    <p>to mess with so many softwares to create one single report. This <br> revolutionary software will create your reports in record time and also <br> manage all your data quickly without wasting time. Search, Index and  <br> manage your all reports in fraction of seconds through unique dashboard <br> feature. It also have spell check, reminders, auto-complete, user defined <br> external file linking, Arrow, circle and text marking in album creation, One <br> and only software to maintain TAT thus insuring stress free working and <br> peace of mind. <br>
+                       <strong> Huge Satisfied Customer Base All Over INDIA.</strong></p><br>
+                    <img width="350px" height="150px" src="https://www.code-x.in/images/All_In_One.jpg" alt="">
+                </div>
+            </div>
+            <div class="container14">
+                <div class="container14-1">
+                    <i class="fa fa-2x fa-file-text-o" aria-hidden="true"></i>
+                    <strong>Reports Generate by Survey Solution</strong>
+                </div>
+                <div class="container14-2">
+                    <i class="fa fa-qrcode" aria-hidden="true"></i>
+                    <strong>Survey Reports</strong>
+                </div>
+                <div class="container14-3">
+                    <ul>
+                        <li>Spot report</li>
+                        <li>Interim report</li>
+                        <li>Status report</li>
+                        <li>Final report <span> (With Multiple formats for different states).</span> </li>
+                        <li>Addendum/Supplementary.</li>
+                        <li>Bill check report <span>(On Single Click with multiple formats).</span> </li>
+                        <li>Re-Inspection report <span>(On Single Click).</span> </li>
+                        <li>Valuation and pre-Inspection report.</li>
+                        <li>All types of letters <span> (to insurer and Insured)</span> </li>
+                        <li>IMT-23 and Add-on Policy (Zero Depreciation).</li>
+                        <li>Total Loss report.</li>
+                        <li>Excel formats of all major companies.</li>
+                    </ul>
+                </div>
+                <div class="container14-4">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <strong>Accounting Reports</strong>
+                </div>
+                <div class="container14-5">
+                    <ul>
+                        <li>Bill Creation<span>( With automated prof. fee, conveyance and photo charge calculation).</span></li>
+                        <li>Fee Calculation<span> (Head Wise, to help calculation of taxes).</span></li>
+                        <li>Payment receipt<span>(With automated TDS calculation).</span></li>
+                        <li>Bill raised report<span>(Date wise for selected date range).</span></li>
+                        <li>Bill received report<span>(Date wise for selected date range).</span></li>
+                        <li>TDS and Service Tax Calculation.</li>
+                        <li>Bill outstanding report.</li>
+                    </ul>
+                </div>
+                <div class="container14-6">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <strong>Office Management Reports</strong>
+                </div>
+                <div class="container14-7">
+                    <ul>
+                        <li>Excel report for weekly pendency status according to insurer.</li>
+                        <li>Report reminders<span>(Connected with reports).</span></li>
+                        <li>Daily Survey Report.</li>
+                        <li>Survey Report date wise.</li>
+                        <li>IRDA format 11 and 12.</li>
+                        <li>Pendency report according to insurer TAT<span>(Turn Around Time).</span></li>
+                    </ul>
+                </div>
+                <div class="container14-8">
+                    <iframe class="vdo1" width="350" height="300" src="https://www.youtube.com/embed/oTK02KgXD48?si=wKFZVbIpffypQomZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="vdo2" width="350" height="300" src="https://www.youtube.com/embed/oTK02KgXD48?si=sT1-ha15WpDGbl2y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="container15">
+                <div class="container15-1">
+                    <strong>KEY FEATURE OF SURVEY SOLUTION
+                    </strong>
+                </div>
+                <div class="container15-2">
+                    <div class="container15-2-1">
+                        <ul>
+                            <li>Reliability.</li>
+                            <li>User Friendly.</li>
+                            <li>Latest Technologies.</li>
+                            <li>Customer Satisfaction.</li>
+                            <li>Lightweight and Secure.</li>
+                            <li>Multi User Environment.</li>
+                        </ul>
+                    </div>
+                    <div class="container15-2-2">
+                        <ul>
+                            <li>Multi User Environment.</li>
+                            <li>Money and Time Saving.</li>
+                            <li>Comprehensive customer support.</li>
+                            <li>Regularly updating and developing software.</li>
+                            <li>Incorporated features from various parts of the <br> country.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container16">
+                <div class="container16-1">
+                    <div class="container16-1-1">
+                        <strong>UNIQUE FEATURE OF SURVEY SOLUTION
+                        </strong>
+                    </div>
+                    <div class="container16-1-2">
+                        <ul>
+                            <li>One and only software with built in <strong><i>quick <br> album creation.</i></strong></li>
+                            <li><strong><i>Extensive search functions. </i></strong>on various <br> parameters in existing records.</li>
+                            <li>Fast, Easy and Organized report feeding.</li>
+                            <li><strong><i>Advanced networking features ( Support <br> multiple network.).</i></strong></li>
+                            <li><strong><i>Auto Backup </i></strong>facility keeps proper backup <br> and prevent data loss.</li>
+                            <li>Single click functions for <strong><i>import, export </i></strong> to <br> other reports.</li>
+                            <li>One report can be <strong><i>printed in multiple <br> format also Excel report formats.</i></strong></li>
+                            <li>User also create his <strong><i>own format in excel</i></strong> and <br> connect it with Survey Solution.</li>
+                            <li>Reports can be <strong><i>exported to Word, Excel and <br> PDF </i></strong> files for sharing via mail.</li>
+                            <li>Developed for fast speed and less data <br>feeding time.</li>
+                            <li><strong><i>Highly customizable User Interface </i></strong>and <br> data fields.</li>
+                            <li><strong><i>Built inAuto-Complete (Shortcut keys) and <br> Spell Check.</i></strong></li>
+                            <li>One Software all solution in one complete <br>suit.</li>
+                            <li><strong><i>Data import from Word, Excel, PDF and <br> Image files (Pic2Text).</i></strong></li>
+                            <li>Linking of <strong><i>external daily usage files </i></strong>in the <br> software, like paint schedules and any other <br> PDF, Word, excel, image files and software <br> that you use regularly.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container16-2">
+                    <div class="container16-2-1">
+                        <strong>USES & BENEFITS OF SURVEY SOLUTION</strong>
+                    </div>
+                    <div class="container16-2-2">
+                        <ul>
+                            <li>Improves day to day <strong><i>working efficiency.</i></strong></li>
+                            <li><strong><i>Save complicated formatting </i></strong>and setting <br> time.</li>
+                            <li><strong><i>Security checks prevents user </i></strong>from <br> inaccurate data feeding thus improves <br> accuracy.</li>
+                            <li><strong><i>Document check list </i></strong>helps users to check <br> and collect every document.</li>
+                            <li><strong><i>Importing data from Images and PDF </i></strong> files <br> saves tons of time.</li>
+                            <li><strong><i>Server based technology </i></strong>ensures secure and <br> safe data management.</li>
+                            <li><strong><i>Easy and fast album </i></strong>creation helps users to <br> create photo-sheets within few seconds.</li>
+                            <li><strong><i>Auto complete and predefined remarks</i></strong> <br> enables user to input textual data with less <br> typing .</li>
+                            <li><strong><i>Light weight and fast software framework</i></strong> <br> for minimum system load.</li>
+                            <li><strong><i>Built-In Accounting,</i></strong> manages all your <br> accounting needs in the background.</li>
+                            <li><strong><i>Simple and user friendly interface </i></strong>helps <br> user to start feeding the report from day one.</li>
+                            <li>Survey Solution <strong><i>automatically calculates </i></strong>all <br> the data entered in the report even for <br> <strong><i>complex paint calculation </i></strong>according to user <br> needs. </li>
+                            <li>Bill outstanding report helps you to keep <br> <strong><i>track of your business.</i></strong></li>
+                            <li>Survey Solution also calculate <strong><i>bill, receipt, <br> service tax and TDS</i></strong>in accounting section.</li>
+                            <li><strong><i>Reminders and pending report <br>notifications </i></strong> helps user to define priority to <br> particular reports.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+        <div class="container6">
+            <div class="container6-1">
+              <h4>Company</h4>
+              <a href="">About Us</a><br>
+              <a href="">Contact Us</a>
+            </div>
+            <div class="container6-2">
+              <h4>Products</h4>
+              <a href="">Survey Solution</a><br>
+              <a href="">Workshop Automation System</a>
+              </div>
+              <div class="container6-3">
+                <h4>Connect with us</h4>
+                <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-3x fa-youtube-play" aria-hidden="true"></i>
+                <i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i>
+              </div>
+              <div class="container6-4">
+                <h4>Services</h4>
+                <a href="">Product Solution</a><br>
+                <a href="">Web Design</a>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
